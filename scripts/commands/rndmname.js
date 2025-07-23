@@ -32,7 +32,7 @@ const length = res.data.length;
     fs.writeFileSync(tempPath, Buffer.from(videoResponse.data));
 
     const styledMessage = {
-  body: `🎬 𝗧𝗜𝗧𝗟𝗘: ${title || "Unknown Title"}\n🔍 𝗦𝗘𝗔𝗥𝗖𝗛 𝗤𝗨𝗘𝗥𝗬: ${nameParam}\n📦 𝗧𝗢𝗧𝗔𝗟 𝗩𝗜𝗗𝗘𝗢𝗦: ${length}\n✨ 𝗖𝗥𝗘𝗗𝗜𝗧𝗦: 𝙄𝙈𝙍𝘼𝙉 𝗕𝗢𝗧`,
+  body: `🎬 𝗧𝗜𝗧𝗟𝗘: ${title || "Unknown Title"}\n🔍 𝗦𝗘𝗔𝗥𝗖𝗛 𝗤𝗨𝗘𝗥𝗬: ${nameParam}\n📦 𝗧𝗢𝗧𝗔𝗟 𝗩𝗜𝗗𝗘𝗢𝗦: ${length}\n✨ 𝗖𝗥𝗘𝗗𝗜𝗧𝗦: 𝙍𝘼𝙃𝘼𝙏 𝗕𝗢𝗧`,
   attachment: fs.createReadStream(tempPath)
 };
 
